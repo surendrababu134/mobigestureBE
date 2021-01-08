@@ -1,0 +1,16 @@
+{
+    "name": "DBSapi",
+    "version": "1.0.0",
+    "description": "API for DBS test",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "Saisyam",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "sqlite3": "^5.0.0"
+    }
+}
