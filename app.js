@@ -1,24 +1,17 @@
 var express = require("express");
 const fs = require('fs');
-var cors = require('cors')
+var cors = require('cors');
 const sqlite3 = require('sqlite3').verbose();
 var app = express();
-const corsOpts = {
-    origin: '*',
-  
-    methods: [
-      'GET',
-      'POST',
-    ],
-  
-    allowedHeaders: [
-      'Content-Type',
-    ],
-  };
+
 
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+/************
+ * To remove CORS error for the other applications
+ * 
+ */
 app.use(cors());
 app.listen(3000, () => {
  console.log("Server running on port 3000");
